@@ -1,0 +1,13 @@
+
+<h2>Admin Dashboard</h2>
+<table border="1" cellpadding="10">
+<tr><th>Name</th><th>Phone</th><th>Service</th><th>Problem</th></tr>
+<% bookings.forEach(function(b){ %>
+<tr>
+<td><%= b.name %></td>
+<td><%= b.phone %></td>
+<td><%= b.serviceType %></td>
+<td><%= b.problem %></td>
+</tr>
+<% }) %>
+</table>
